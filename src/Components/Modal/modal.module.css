@@ -1,0 +1,18 @@
+.modal{
+   position: fixed;
+   background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ;
+}
+.modalContainer{
+    background-color: aliceblue;
+    width: 600px;
+    height: 300px;
+    transition: all 1s ;
+    border-radius: 20px;
+}

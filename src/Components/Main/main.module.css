@@ -1,0 +1,268 @@
+.mainImg {
+    position: relative;
+    background: url('img/5226955743486405157.jpg') no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.mainImg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.mainImg p {
+    text-align: center;
+    line-height:110px;
+    position: relative;
+    z-index: 2; 
+    color: white;
+    padding: 20px;
+    font-size: 55px;
+    font-weight: 550;
+}
+.aboutContainer {
+    display: flex;
+    background-color: #f0f8f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.aboutContainer img {
+    min-width: 500px;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+}
+
+.aboutContent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333;
+}
+
+.aboutContent p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.aboutContent button {
+    font-size: 25px;
+    font-weight: 600;
+    width: 300px;
+    line-height: 30px;
+    background-color: #66cdaa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin:  0 auto;
+}
+
+.aboutContent button:hover {
+    background-color: #5abf9a;
+}
+.title{
+    font-size: 35px;
+    font-weight: 550;
+    text-align: center;
+    margin-top: 20px;
+}
+.servicesContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.serviceCard {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.serviceCard:hover {
+    transform: scale(1.05);
+}
+
+.serviceCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.serviceContent {
+    padding: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.serviceContent h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.serviceContent p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.serviceContent button {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    background-color: #66cdaa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.serviceContent button:hover {
+    background-color: #5abf9a;
+}
+.blog {
+    margin: 20px 0;
+    margin-top: 20px;
+}
+
+.blogContainer {
+
+    padding-top: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add space between posts */
+}
+.contactForm {
+    background-color: #f0f8f7; /* Light background for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm .title {
+    font-size: 30px;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    background-color: #66cdaa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5abf9a;
+}
+
+.blogPost {
+    display: flex;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.blogPost:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.blogPost img {
+    width: 120px; /* Fixed width for images */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px; /* Round corners */
+}
+
+.blogContent {
+    padding: 15px;
+    flex: 1; /* Take remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    color: #333;
+}
+
+.blogContent h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.blogContent p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.blogContent button {
+    font-size: 18px;
+    font-weight: 600;
+    width: fit-content; /* Adjust button width */
+    background-color: #66cdaa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.blogContent button:hover {
+    background-color: #5abf9a;
+}
